@@ -1,8 +1,8 @@
 interface Student {
-    firstName: string,
-    lastName: string,
-    age: number,
-    location: string,
+    firstName: string;
+    lastName: string;
+    age: number;
+    location: string;
 }
 
 let student1: Student ={
@@ -19,7 +19,7 @@ let student2: Student ={
     location: 'Los Angeles',
 }
 
-const studentsList: [Student, Student] = [ student1, student2 ]
+const studentsList: Student[] = [ student1, student2 ]
 
 let table = document.createElement('table');
 document.body.appendChild(table);
