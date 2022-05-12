@@ -3,3 +3,4 @@ task_*/node_modules
 task_0/dist/main.js
 task_*/public/bundle*
 task_*/public/*.jpg
+task_3/public
