@@ -1,0 +1,19 @@
+
+
+.App-header {
+  display: flex;
+  color: red;
+  border-bottom: 3px solid red;
+  align-items: center;
+}
+
+.App-body {
+  padding: 3em;
+  border-bottom: 3px solid red;
+  height: 35em;
+}
+
+.App-footer {
+  font-style: italic;
+  text-align: center;
+}
