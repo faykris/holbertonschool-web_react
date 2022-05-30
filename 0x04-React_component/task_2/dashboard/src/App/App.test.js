@@ -37,7 +37,8 @@ describe('<App />', () => {
     const wrapper = shallow(<App isLoggedIn={true}/>);
     expect(wrapper.find('Footer')).toHaveLength(1);
   });
-  it("if <App /> when the keys control and h are pressed the logOut function", () => {
+
+  it('if <App /> when the keys control and h are pressed the logOut function', () => {
     const events = {};
     const logout = jest.fn();
 

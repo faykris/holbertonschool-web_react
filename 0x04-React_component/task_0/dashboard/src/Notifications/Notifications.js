@@ -5,8 +5,7 @@ import close_icon from '../assets/close-icon.png';
 import NotificationItem from './NotificationItem';
 import NotificationItemShape from "./NotificationItemShape";
 
-
-function Notifications( { displayDrawer, listNotifications} ) {
+function Notifications( { displayDrawer, listNotifications } ) {
   const closeStyle = {
     position: 'absolute',
     textAlign: 'right',
