@@ -7,6 +7,8 @@ import Footer from "../Footer/Footer";
 import PropTypes from "prop-types";
 import { getLatestNotification } from "../utils/utils";
 import "./App.css";
+import BodySection from "../BodySection/BodySection";
+import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
 
 const listCourses = [
   { id: 1, name: "ES6", credit: 60 },
@@ -50,8 +52,19 @@ class App extends Component {
           <Header />
         </div>
         <div className="App-body">
-          {!isLoggedIn ? <Login /> : <CourseList listCourses={listCourses} />}
+          {!isLoggedIn ? (
+            <BodySectionWithMarginBottom title="Log in to continue">
+              <Login />
+            </BodySectionWithMarginBottom>
+          ) : (
+            <BodySectionWithMarginBottom title="Course list">
+              <CourseList listCourses={listCourses} />
+            </BodySectionWithMarginBottom>
+          )}
         </div>
+        <BodySection title="News from the School">
+          <p>Lorem ipsum</p>
+        </BodySection>
         <div className="App-footer">
           <Footer />
         </div>
