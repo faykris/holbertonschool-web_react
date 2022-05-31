@@ -23,7 +23,7 @@ describe('<NotificationItem />', () => {
     expect(wrapper.find('li').html()).toEqual('<li data-notification-type="default"><u>test</u></li>');
   });
 
-  it("when calling the function markAsRead on an instance of the component", () => {
+  it('if <NotificationItem /> when calling the function markAsRead on an instance of the component', () => {
     const id = 27;
 
     const wrapper = shallow(
