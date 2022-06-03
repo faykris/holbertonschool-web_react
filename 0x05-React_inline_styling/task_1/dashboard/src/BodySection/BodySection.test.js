@@ -39,7 +39,7 @@ describe("<BodySection />", () => {
       </BodySection>
     );
 
-    const div = wrapper.find(".bodySection_1oog8up").first();
+    const div = wrapper.find(".bodySection_nrlifv").first();
 
     expect(div.exists()).toEqual(true);
   });

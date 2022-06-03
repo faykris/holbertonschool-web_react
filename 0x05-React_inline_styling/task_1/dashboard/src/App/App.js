@@ -17,16 +17,11 @@ const styles = StyleSheet.create({
 
   header: {
     display: 'flex',
-    color: 'red',
     borderBottom: '3px solid red',
     alignItems: 'center',
   },
 
   body: {
-    'body': {
-      margin: 0
-    },
-    padding: '3em',
     display: 'flex',
   },
 

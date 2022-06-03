@@ -6,11 +6,12 @@ const styles = StyleSheet.create({
   bodySection: {
     display: "flex",
     flexWrap: "wrap",
-    width: "100%",
+    padding: "3rem",
   },
 
   h2: {
     width: "100%",
+    margin: "0",
   },
 })
 

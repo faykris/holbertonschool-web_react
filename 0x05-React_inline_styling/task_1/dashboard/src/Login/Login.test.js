@@ -18,12 +18,12 @@ describe("<Login />", () => {
   it("if <Login /> renders 2 input", () => {
     const wrapper = shallow(<Login />);
     wrapper.update();
-    expect(wrapper.find("div.login input")).toHaveLength(2);
+    expect(wrapper.find("div.login_3hmsj input")).toHaveLength(2);
   });
 
   it("if <Login /> renders 2 label", () => {
     const wrapper = shallow(<Login />);
     wrapper.update();
-    expect(wrapper.find("div.login label")).toHaveLength(2);
+    expect(wrapper.find("div.login_3hmsj label")).toHaveLength(2);
   });
 });
