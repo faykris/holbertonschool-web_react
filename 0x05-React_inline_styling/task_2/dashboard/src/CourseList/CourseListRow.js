@@ -1,27 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { StyleSheet, css } from 'aphrodite';
 
 function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
   let value;
-  const row = {
-    backgroundColor: '#f5f5f5ab',
 
-  }
-  const header = {
-    backgroundColor: '#deb5b545',
-    borderBottom: '1px solid rgb(170, 170, 170)',
-  }
+  const styles = StyleSheet.create({
+    row: {
+      backgroundColor: '#f5f5f5ab',
+    },
+    th: {
+      backgroundColor: '#deb5b545',
+      borderBottom: '1px solid rgb(170, 170, 170)',
+    }
+  });
 
   if (isHeader) {
     if (textSecondCell) {
       value = (
         <>
-          <th style={header}>{textFirstCell}</th>
-          <th style={header}>{textSecondCell}</th>
+          <th className={css(styles.th)}>{textFirstCell}</th>
+          <th className={css(styles.th)}>{textSecondCell}</th>
         </>
       );
     } else {
-      value = <th style={header} colSpan="2">{textFirstCell}</th>;
+      value = <th className={css(styles.th)} colSpan="2">{textFirstCell}</th>;
     }
   } else {
     value = (
@@ -31,7 +34,7 @@ function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
       </>
     );
   }
-  return <tr style={row}>{value}</tr>;
+  return <tr className={css(styles.row)}>{value}</tr>;
 }
 
 CourseListRow.defaultProps = {
