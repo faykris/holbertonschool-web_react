@@ -12,13 +12,11 @@ import { StyleSheet, css } from 'aphrodite';
 
 const styles = StyleSheet.create({
   app: {
-    margin: 0
+    margin: 0,
   },
 
   header: {
-    display: 'flex',
-    borderBottom: '3px solid red',
-    alignItems: 'center',
+
   },
 
   body: {
