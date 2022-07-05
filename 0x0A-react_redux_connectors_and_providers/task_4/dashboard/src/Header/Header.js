@@ -19,7 +19,7 @@ export class Header extends Component {
         <img src={holberton_logo} className={css(styles.headerImg)} />
         <h1>School dashboard</h1>
 
-        {user && Object.keys(user).length !== 0 && (
+        {user && (
           <p id="logoutSection" className={css(styles.logoutSection)}>
             Welcome <b>{`${user.email} `}</b>
             <span onClick={logout} className={css(styles.logoutSectionSpan)}>
@@ -64,7 +64,7 @@ Header.contextType = AppContext;
 
 Header.defaultProps = {
   user: null,
-  logout: () => { },
+  logout: () => {},
 };
 
 Header.propTypes = {
@@ -74,7 +74,7 @@ Header.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    user: state.get("user"),
+    user: state.ui.get("user"),
   };
 };
 

@@ -9,7 +9,7 @@ export function Footer({ user }) {
       <p>
         Copyright {getFullYear()} - {getFooterCopy(true)}
       </p>
-      {user && Object.keys(user).length !== 0 && <a href="#">Contact us</a>}
+      {user && <a href="#">Contact us</a>}
     </div>
   );
 }
@@ -24,7 +24,7 @@ Footer.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    user: state.get("user"),
+    user: state.ui.get("user"),
   };
 };
 

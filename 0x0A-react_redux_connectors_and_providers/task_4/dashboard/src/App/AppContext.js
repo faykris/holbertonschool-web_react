@@ -4,7 +4,7 @@ export const user = {
   email: "",
   password: "",
   isLoggedIn: false,
-}
+};
 
 export const logOut = () => {};
 
