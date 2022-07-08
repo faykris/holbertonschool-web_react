@@ -1,9 +1,11 @@
 import { Map, fromJS } from "immutable";
+
 import {
   filterTypeSelected,
   getNotifications,
   getUnreadNotificationsByType,
 } from "./notificationSelector";
+
 import notificationReducer, {
   initialNotificationState,
 } from "../reducers/notificationReducer";

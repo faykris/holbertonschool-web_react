@@ -156,6 +156,7 @@ const styles = StyleSheet.create({
   },
 
   footer: {
+    marginTop: '3rem',
     borderTop: `3px solid ${cssVars.mainColor}`,
     width: "100%",
     display: "flex",

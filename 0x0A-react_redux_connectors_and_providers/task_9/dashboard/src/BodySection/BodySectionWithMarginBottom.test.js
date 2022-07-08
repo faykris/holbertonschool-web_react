@@ -1,4 +1,4 @@
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import React from "react";
 import BodySectionWithMarginBottom from "./BodySectionWithMarginBottom";
 import { StyleSheetTestUtils } from "aphrodite";
@@ -38,16 +38,5 @@ describe("<BodySectionWithMarginBottom />", () => {
 
     expect(p).toHaveLength(1);
     expect(p.text()).toEqual("test children node");
-  });
-  it("BodySectionWithMarginBottom has correct class for style", () => {
-    const wrapper = shallow(
-      <BodySectionWithMarginBottom title="test title">
-        <p>test children node</p>
-      </BodySectionWithMarginBottom>
-    );
-
-    const div = wrapper.find(".bodySectionWithMargin_zdxht7").first();
-
-    expect(div.exists()).toEqual(true);
   });
 });
